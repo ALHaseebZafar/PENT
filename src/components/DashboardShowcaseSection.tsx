@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dashboardImage from '../assets/Frame 1707479353.png';
+import dashboardImage from '../assets/Dashboard.png';
 
 const DashboardShowcaseSection = () => {
   return (
@@ -20,7 +20,7 @@ const DashboardShowcaseSection = () => {
 
         {/* Two Column Layout */}
         <div className="flex justify-center">
-          <div className="grid items-center w-full" style={{ gridTemplateColumns: '320px 1fr', gap: '60px', maxWidth: '1100px' }}>
+          <div className="grid items-center w-full" style={{ gridTemplateColumns: '45% 1fr', gap: '60px', maxWidth: '1100px' }}>
             {/* Left: Feature List */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {/* Feature 1 */}
@@ -129,7 +129,7 @@ const DashboardShowcaseSection = () => {
                 <Image 
                   src={dashboardImage}
                   alt="Financial Dashboard"
-                  className="w-full h-auto"
+                  className="w-full h-full"
                   style={{
                     borderRadius: '14px',
                     filter: 'drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.5))'

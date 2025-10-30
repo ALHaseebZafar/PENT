@@ -3,17 +3,17 @@ import lockImage from '../assets/lock_front.png';
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20 px-4 relative z-10">
+    <section className="py-24 px-4 relative z-10">
       <div className="max-w-[1400px] mx-auto">
         <div className="flex justify-center">
-          <div className="grid grid-cols-[480px_1fr] gap-20 items-center w-full max-w-[1300px]">
+          <div className="grid items-center w-full" style={{ gridTemplateColumns: '420px 1fr', gap: '80px', maxWidth: '1280px' }}>
           {/* Left: Text & Lock Image */}
           <div className="flex flex-col">
-            <h3 className="text-[48px] font-bold mb-6 leading-[1.2]" style={{ fontFamily: 'DM Sans, sans-serif', color: '#FFFFFF' }}>
+            <h3 className="font-bold mb-6 leading-[1.2]" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '44px', color: '#C8C8C8' }}>
               Lorem Ipsum<br />Dollar
             </h3>
-            <p className="text-[14px] leading-[1.8] mb-16" style={{ fontFamily: 'DM Sans, sans-serif', color: '#FFFFFF' }}>
-              Consequat natus consequat tortor<br/>
+            <p className="leading-[1.8] mb-16" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '14px', color: '#A0A0A0' }}>
+              Consequat netus consequat tortor<br/>
               vitae cursus nullam tincidunt<br/>
               urna. Tristique leo consequat
             </p>
@@ -23,15 +23,15 @@ const FeaturesSection = () => {
               <Image 
                 src={lockImage}
                 alt="Lock" 
-                width={265}
-                height={265}
+                width={280}
+                height={280}
                 className="object-contain"
               />
             </div>
           </div>
 
           {/* Right: Feature Cards Grid */}
-          <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(4, 1fr)', gridTemplateRows: 'repeat(3, auto)' }}>
+          <div className="grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)', gridTemplateRows: 'repeat(3, auto)', gap: '18px' }}>
             {/* Row 1, Col 1-2: Lock */}
             <div style={{ gridColumn: 'span 2' }}>
               <FeatureCard
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
             </div>
             
             {/* Row 3, Col 1: Checkmark (offset to the left) */}
-            <div style={{ marginLeft: '-40px' }}>
+            <div style={{ marginLeft: '-35px' }}>
               <FeatureCard
                 icon={
                   <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
@@ -110,21 +110,36 @@ const FeaturesSection = () => {
 const FeatureCard = ({ icon, tall }: { icon: React.ReactNode; tall?: boolean }) => {
   return (
     <div 
-      className="backdrop-blur-[2.62px] transition-all duration-300 p-10 flex flex-col items-center justify-center"
+      className="backdrop-blur-[2.62px] transition-all duration-300 flex flex-col items-center justify-center relative overflow-hidden"
       style={{
         backgroundColor: '#282828',
-        borderRadius: '15.7px',
+        borderRadius: '14px',
         border: '1.30833px solid transparent',
         backgroundImage: 'linear-gradient(#282828, #282828), linear-gradient(151.563deg, #3D3D3D 12.56%, rgba(160, 160, 160, 0.04) 82.3502%)',
         backgroundOrigin: 'border-box',
         backgroundClip: 'padding-box, border-box',
-        height: tall ? 'calc(334px)' : '157px'
+        height: tall ? 'calc(334px)' : '157px',
+        padding: '36px 40px'
       }}
     >
-      <div className="flex items-center justify-center mb-5" style={{ color: '#ECEDEE' }}>
+      {/* Gradient overlay at bottom */}
+      <div 
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: '60%',
+          background: 'linear-gradient(180deg, rgba(40, 40, 40, 0) 0%, rgba(30, 30, 30, 0.4) 100%)',
+          pointerEvents: 'none',
+          zIndex: 0
+        }}
+      />
+      
+      <div className="flex items-center justify-center mb-5 relative z-10" style={{ color: '#ECEDEE' }}>
         {icon}
       </div>
-      <h4 className="text-center text-[16px] font-bold leading-tight" style={{ fontFamily: 'DM Sans, sans-serif', color: '#ECEDEE' }}>
+      <h4 className="text-center font-bold leading-tight relative z-10" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '15px', color: '#D8D8D8' }}>
         Lorem Ipsum<br />Dollar
       </h4>
     </div>
