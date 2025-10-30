@@ -13,11 +13,6 @@ const TestimonialsSection = () => {
       avatar: "https://i.pravatar.cc/150?img=47"
     },
     {
-      name: "Aliquet rhoncus",
-      text: "Urna pellentesque in elementum lacus amet tristique. Nec elementum lacus urna quis odio. Posuere facilisi ultricies et donec mauris ornare interdum dui ut.",
-      avatar: "https://i.pravatar.cc/150?img=45"
-    },
-    {
       name: "Erat consectetur",
       text: "Diam tellus risus venenatis arcu sed pretium enim. Gravida odio tincidunt sem risus sit. Ac enim odio id accumsan pretium quisque venenatis suscipit lobortis.",
       avatar: "https://i.pravatar.cc/150?img=33"
@@ -28,14 +23,19 @@ const TestimonialsSection = () => {
       avatar: "https://i.pravatar.cc/150?img=29"
     },
     {
-      name: "Placerat nisl",
-      text: "Tristique nulla proin augue sit aliquam donec ornare. Aliquam diam egestas egestas feugiat lacinia. Facilisis sagittis nibh morbi ornare nunc iusto sit.",
-      avatar: "https://i.pravatar.cc/150?img=26"
+      name: "Aliquet rhoncus",
+      text: "Urna pellentesque in elementum lacus amet tristique nam elementum lacus urna quis odio. Posuere facilisi ultricies et donec mauris ornare interdum dui ut.",
+      avatar: "https://i.pravatar.cc/150?img=45"
     },
     {
       name: "Egestas mauris",
-      text: "Magna id ut eu amet blandit sit nisl lacus gravida. Massa praesent auctor gravida. Massa praesent.",
+      text: "Magna id ut eu amet blandit sit nisl lacus gravida. Massa praesent.",
       avatar: "https://i.pravatar.cc/150?img=44"
+    },
+    {
+      name: "Placerat nisl",
+      text: "Tristique nulla proin augue sit aliquam donec ornare. Aliquam diam egestas egestas feugiat lacinia. Facilisis sagittis nibh.",
+      avatar: "https://i.pravatar.cc/150?img=26"
     },
     {
       name: "Magna tellus",
@@ -49,41 +49,48 @@ const TestimonialsSection = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* Heading */}
         <h2 
-          className="text-center text-white text-[48px] font-bold mb-16 leading-[1.2]"
-          style={{ fontFamily: 'DM Sans, sans-serif' }}
+          className="text-center font-bold mb-14 leading-[1.2]"
+          style={{ 
+            fontFamily: 'DM Sans, sans-serif',
+            fontSize: '40px',
+            color: '#CCCCCC'
+          }}
         >
           Tons of others love using PentAi.
         </h2>
 
         {/* Testimonials Grid - 2 Rows */}
-        <div className="max-w-[1200px] mx-auto space-y-5">
+        <div className="max-w-[1200px] mx-auto space-y-4">
           {/* First Row */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-            {/* Floyd Miles - Wider card */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {/* Floyd Miles */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[0].avatar}
                   alt={testimonials[0].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[0].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[0].text}
               </p>
@@ -91,89 +98,98 @@ const TestimonialsSection = () => {
 
             {/* Esther Howard */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[1].avatar}
                   alt={testimonials[1].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[1].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[1].text}
               </p>
             </div>
 
-            {/* Aliquet rhoncus */}
+            {/* Erat consectetur */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[2].avatar}
                   alt={testimonials[2].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[2].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[2].text}
               </p>
             </div>
 
-            {/* Erat consectetur */}
+            {/* Mauris pulvinar */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[3].avatar}
                   alt={testimonials[3].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[3].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[3].text}
               </p>
@@ -181,92 +197,101 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Second Row */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-            {/* Mauris pulvinar */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {/* Aliquet rhoncus */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[4].avatar}
                   alt={testimonials[4].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[4].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[4].text}
               </p>
             </div>
 
-            {/* Placerat nisl */}
+            {/* Egestas mauris */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[5].avatar}
                   alt={testimonials[5].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[5].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[5].text}
               </p>
             </div>
 
-            {/* Egestas mauris */}
+            {/* Placerat nisl */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[6].avatar}
                   alt={testimonials[6].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[6].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[6].text}
               </p>
@@ -274,29 +299,32 @@ const TestimonialsSection = () => {
 
             {/* Magna tellus */}
             <div 
-              className="md:col-span-1 p-6 rounded-2xl"
+              className="md:col-span-1 p-5 rounded-xl"
               style={{
-                backgroundColor: 'rgba(30, 30, 30, 0.6)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(30, 30, 30, 0.5)',
+                border: '1px solid rgba(255, 255, 255, 0.06)',
                 backdropFilter: 'blur(20px)'
               }}
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <img 
                   src={testimonials[7].avatar}
                   alt={testimonials[7].name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <h3 
-                  className="text-white text-[16px] font-semibold"
+                  className="text-white text-[15px] font-semibold"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {testimonials[7].name}
                 </h3>
               </div>
               <p 
-                className="text-[#9CA3AF] text-[14px] leading-[1.7]"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
+                className="text-[13px] leading-[1.7]"
+                style={{ 
+                  fontFamily: 'DM Sans, sans-serif',
+                  color: '#808080'
+                }}
               >
                 {testimonials[7].text}
               </p>

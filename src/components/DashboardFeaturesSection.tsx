@@ -7,7 +7,7 @@ const DashboardFeaturesSection = () => {
     <section className="py-24 px-4 relative z-10">
       <div className="max-w-[1400px] mx-auto">
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 gap-20 items-start w-full max-w-[1300px]">
+          <div className="grid grid-cols-2 gap-4 items-start w-full max-w-[1200px]">
           {/* Left Column */}
           <div className="flex flex-col">
             {/* Dashboard Image */}
@@ -58,8 +58,11 @@ const DashboardFeaturesSection = () => {
 
                   {/* Feature Text */}
                   <p 
-                    className="text-[#808080] text-[15px] leading-[1.8] flex-1"
-                    style={{ fontFamily: 'DM Sans, sans-serif' }}
+                    className="text-[15px] leading-[1.8] flex-1"
+                    style={{ 
+                      fontFamily: 'DM Sans, sans-serif',
+                      color: '#FFFFFF'
+                    }}
                   >
                     Pellentesque odio sit sem nulla fringilla cum diam morbi at. Consectetur enim nulla risus elementum mattis.
                   </p>
@@ -118,8 +121,11 @@ const DashboardFeaturesSection = () => {
 
                   {/* Feature Text */}
                   <p 
-                    className="text-[#808080] text-[15px] leading-[1.8] flex-1"
-                    style={{ fontFamily: 'DM Sans, sans-serif' }}
+                    className="text-[15px] leading-[1.8] flex-1"
+                    style={{ 
+                      fontFamily: 'DM Sans, sans-serif',
+                      color: '#FFFFFF'
+                    }}
                   >
                     Pellentesque odio sit sem nulla fringilla cum diam morbi at. Consectetur enim nulla risus elementum mattis.
                   </p>

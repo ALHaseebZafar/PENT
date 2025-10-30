@@ -9,10 +9,10 @@ const FeaturesSection = () => {
           <div className="grid grid-cols-[480px_1fr] gap-20 items-start w-full max-w-[1300px]">
           {/* Left: Text & Lock Image */}
           <div className="flex flex-col">
-            <h3 className="text-[48px] font-bold text-white mb-6 leading-[1.2]" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+            <h3 className="text-[48px] font-bold mb-6 leading-[1.2]" style={{ fontFamily: 'DM Sans, sans-serif', color: '#FFFFFF' }}>
               Lorem Ipsum<br />Dollar
             </h3>
-            <p className="text-[#808080] text-[14px] leading-[1.8] mb-16" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+            <p className="text-[14px] leading-[1.8] mb-16" style={{ fontFamily: 'DM Sans, sans-serif', color: '#FFFFFF' }}>
               Consequat natus consequat tortor<br/>
               vitae cursus nullam tincidunt<br/>
               urna. Tristique leo consequat
