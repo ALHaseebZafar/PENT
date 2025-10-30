@@ -1,8 +1,13 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import SupportersSection from '@/assets/SupportersSection';
+import SupportersSection from '@/components/SupportersSection';
 import StatsSection from '@/components/StatsSection';
 import FeaturesSection from '@/components/FeaturesSection';
+import DashboardFeaturesSection from '@/components/DashboardFeaturesSection';
+import DashboardShowcaseSection from '@/components/DashboardShowcaseSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import CTASection from '@/components/CTASection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -12,6 +17,11 @@ export default function Home() {
       <SupportersSection />
       <StatsSection />
       <FeaturesSection />
+      <DashboardFeaturesSection />
+      <DashboardShowcaseSection />
+      <TestimonialsSection />
+      <CTASection />
+      <Footer />
     </main>
   );
 }
